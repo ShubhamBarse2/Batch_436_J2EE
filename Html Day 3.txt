@@ -1,0 +1,186 @@
+Todays Lecture Agenda :
+
+
+## Form
+
+                        Forms in HTML are used to collect user inputs and send them to a server. The main element is the <form> tag,
+                        which wraps various input elements such as text fields, checkboxes, radio buttons, and submit buttons.
+
+                     Attributes of form :
+
+                                        Action :  attribute specifies where the form data is sent 
+                                        Method :  attribute defines how the data is sent (e.g., GET or POST).
+
+                       syntax : 
+                                     <form  action="/java"  method=" ">   </form>
+
+
+
+
+
+
+
+         label Tag :
+
+                             The <label> HTML element represents a caption for a form element in a user interface.
+                             
+                              Syntax : 
+                    
+                                                  <label> field_name </label>
+
+
+
+
+        input tag  :
+
+                                    The <input> tag specifies an input field where the user can enter data.
+
+
+                      Common attributes to Input Fields:
+
+	                          type : Defines the type of input (text, password, email, radio, checkbox, submit, date, number, submit etc.).
+
+	                          name : The name of the input field, used to identify it when data is sent to the server.
+
+	                          placeholder : Shows a hint in the input field.       
+
+                      Syntax : 
+
+                                     Name:  <input   type=" "  name=" "  placeholder="  " value="{{db.name}}" requried  hidden  Disable>
+
+     HTML Input Types
+
+ 
+        1. Button : 
+
+                           <label>Button :  </label>
+                           <input type="button" value="Click Me"/>
+
+       Checkbox : 
+
+                               <label>language : </label>
+                               <input type="checkbox" name=" lang " value="English"> English
+                               <input type="checkbox" name=" lang " value="Marathi"> Telugu
+                               <input type="checkbox" name=" lang " value="Hindi"> Hindi
+               
+       Date :
+                               <label>Date : </label>
+                               <input type="date"  name = "date" >
+
+       Email : 
+
+                             <label>Email : </label>
+                             <input type="email"  name = "email" placeholder="Enter a email" >
+        
+      Month:
+
+                            <label>Month : </label> 
+                            <input type="month" name="month>
+
+      Password :
+
+                        <label>Password : </label>
+                       <input type="password" name="password" placeholder="Enter a Password">  
+
+
+      Tel  :
+
+                   <label>Mobile : </label>
+                   <input type="tel" name="telephone"  placeholder="Enter A Mobile Number">
+
+    Time : 
+
+                   <label>Time :  </label>
+                   <input type="time" name="time">
+
+
+    Radio : 
+                         <label >Gender : </label>  
+                         <input type="radio"  name="gender" value="male"/>Male
+                         <input type="radio"  name="gender" value="female"/>Female 
+
+
+
+   Dropdown :
+                            <label>Course : </label>
+                            <select name="course">
+                            <option>Select a course</option>
+                            <option>Python</option>
+                            <option>Java</option>
+                            <option>Testing</option>
+                            </select>
+
+   Textareas : 
+                                The <textarea> element is used for multi-line text input
+                                 <h2>Enter Your Feed Back : </h2>
+                                <textarea name="feedback"></textarea>
+
+
+
+
+                                                                                                         
+
+## Tables
+
+                              HTML tables allow web developers to arrange data into rows and columns.
+
+                                       <table> :	   Defines a table
+
+                                          <th> :       Defines a header cell in a table
+
+                                         <tr> :        Defines a row in a table
+
+                                         <td> :       Defines a data inserted in a table
+
+                                    <caption> :  Defines a table caption 
+
+                                       <thead> :  Groups the header content in a table
+
+                                      <tbody> :   Groups the body content in a table
+
+
+                                 Syntax : 
+ 
+                                                         <table>
+                                                                           <caption> Table name</caption>
+                                                                        <thead>
+                                                                                  <tr>
+                                                                                           <th>Column name 1 </th>
+                                                                                           <th>Column name 2</th>
+                                                                                           <th>Column name 3</th>
+                                                                                    </tr> 
+                                                                          </thead>
+
+                                                                          <tbody>
+                                                                                  <tr>
+                                                                                           <td>Row data 1 </td>
+                                                                                           <td>Row data 1</td>
+                                                                                           <td>Row data 1</td>
+                                                                                    </tr> 
+          
+                                                                                  <tr>
+                                                                                           <td>Row data 2 </td>
+                                                                                           <td>Row data 2</td>
+                                                                                           <td>Row data 2</td>
+                                                                                    </tr> 
+                                                                          </tbody>
+                                                          </table>
+
+                              
+## Div and Spans & p
+
+        Block-level Elements (<div>) : 
+
+                                     The <div> element is a block-level element that is used as a  container for other elements. It occupies the full width available and starts on a new line. Div  are often used to group sections of HTML content and apply styles or layouts.
+
+                            <div> 
+                                          Write different  Tags 
+                          </div>
+
+              Inline Elements (<span>) : 
+
+                                    The <span> element is an inline element that is used to group text or elements without breaking the flow of the content. It is commonly used for applying styles to specific parts of a text.
+
+                           <p>This is a <span style="color: red;">red</span> word inside a paragraph.</p>
+
+

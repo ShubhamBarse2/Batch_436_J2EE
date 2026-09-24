@@ -1,0 +1,153 @@
+Todays Lecture Agenda : 
+
+
+##  Lists
+
+                HTML lists allow web developers to group a set of related items in lists.
+
+      Ordered List <ol> :
+
+                         An ordered list starts with the <ol> tag. Each list item starts with  the <li> tag.
+
+                                               <ol    type="1">
+                                              <li>Coffee</li>
+                                              <li>Tea</li>
+                                              <li>Milk</li>
+                                               </ol>
+
+                  Type Attribute
+
+                            type="1" : The list items will be numbered with numbers (default)
+                            type="A" : The list items will be numbered with uppercase letters
+                            type="a" :  The list items will be numbered with lowercase letters
+                            type="I" :  The list items will be numbered with uppercase roman numbers
+                            type="i" :  The list items will be numbered with lowercase roman numbers
+
+
+      Un-ordered List <ul> :
+
+                       An unordered list starts with the <ul> tag. Each list item starts with   the <li> tag
+
+                                           <ul>
+                                           <li>Coffee</li>
+                                           <li>Tea</li>
+                                           <li>Milk</li>
+                                           </ul>
+
+
+## Links and Anchors
+
+
+       Hyperlinks (<a> Tag) :
+
+                                  The <a> tag, also called an anchor tag, is used to create hyperlinks. These  hyperlinks can link to other web pages, resources, or even to specific                                              
+                                  section  within the same  page.
+
+                                                     <a href="URL">Link Text</a>
+
+                                                     <a href="https://www.google.com ">Google</a>
+
+       href (Hypertext Reference): 
+
+                                    This attribute specifies the destination URL of the hyperlink.
+
+       URLs & Paths :
+
+                        <a href="page.html">Go To Page</a>                      
+
+##  Button Tag  :
+                      
+                           The <button> tag defines a clickable button.  Inside a <button> element you can put text 
+ 
+                                                   <button> Click Me </button>
+                             
+
+## Difference between Button Tag and Anchors Tag
+
+                  Links :    
+                               A link is used to take the user to an entirely new page. Links are contained within an HTML anchor tag with an href attribute containing the URL where the user will be directed.
+
+                   Buttons : 
+                                    A button is meant to submit information and will not necessarily redirect the user to an entirely new web page.
+
+
+## Marquee Tag
+
+                              The <marquee> tag is a container tag of HTML that is implemented for creating scrollable text or images within a web page from either left to right or  up to down 
+
+       Text:-
+
+                        <marquee behavior="scroll" direction="left" scrollamount="3"   height="60px" >Slow Scrolling</marquee>
+
+
+      three different types  behavior :
+
+                                                   scroll,  slide and  alternate.
+
+##  Images
+
+                              The <img> tag in HTML is used to embed images in a web page.
+
+                               It is a self-closing tag, meaning it doesn’t need a closing tag. 
+
+                               The image itself is not inserted directly into the page but referenced through the src attribute, which specifies the image’s URL or file path.
+
+
+                              <img src=" "   width="300px"   height="300px"   alt="This is Image" >
+
+
+               src :  Points to the image URL.
+
+               width="300" :  Sets the width of the image to 300px.
+
+               height="200" :  Sets the height of the image to 200px.
+
+               alt :  Provides the alternative text for accessibility.
+
+
+
+## Tables
+
+                              HTML tables allow web developers to arrange data into rows and columns.
+
+                                       <table> :	   Defines a table
+
+                                          <th> :       Defines a header cell in a table
+
+                                         <tr> :        Defines a row in a table
+
+                                         <td> :       Defines a data inserted in a table
+
+                                    <caption> :  Defines a table caption 
+
+                                       <thead> :  Groups the header content in a table
+
+                                      <tbody> :   Groups the body content in a table
+
+
+                                 Syntax : 
+ 
+                                                         <table>
+                                                                           <caption> Table name</caption>
+                                                                        <thead>
+                                                                                  <tr>
+                                                                                           <th>Column name 1 </th>
+                                                                                           <th>Column name 2</th>
+                                                                                           <th>Column name 3</th>
+                                                                                    </tr> 
+                                                                          </thead>
+
+                                                                          <tbody>
+                                                                                  <tr>
+                                                                                           <td>Row data 1 </td>
+                                                                                           <td>Row data 1</td>
+                                                                                           <td>Row data 1</td>
+                                                                                    </tr> 
+          
+                                                                                  <tr>
+                                                                                           <td>Row data 2 </td>
+                                                                                           <td>Row data 2</td>
+                                                                                           <td>Row data 2</td>
+                                                                                    </tr> 
+                                                                          </tbody>
+                                                          </table>
