@@ -1,0 +1,71 @@
+                                                                                        ## Day 1 ##
+
+## CSS  : 
+               CSS stands for Cascading Style Sheets
+               CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+               CSS saves a lot of work. It can control the layout of multiple web pages all at once
+               CSS is the language we use to style a Web page.
+
+
+## Why Use CSS : 
+
+                     CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+                     CSS Saves a Lot of Work
+
+## CSS Syntax :  
+                            The CSS provides the style to the HTML element.
+                            CSS style property will be applied to all the elements of the HTML. 
+                            We can provide style property to the HTML element in three parts. 
++
+                            1. Selector :
+                                                  It is an HTML tag. All the style properties of the CSS will be applied to the selector. 
+                                                  The selector tag like <h1> or <table> etc.
+
+                             2. Property : 
+                                                   It is a type of attribute that is present in HTML tags. 
+                                                   All the attributes of the HTML will be converted to the CSS properties. 
+                                                   The CSS properties like color, border, etc.
+
+                              3. Value  : 
+                                                 In HTML, these are assigned to the properties. 
+
+                      Syntax:
+                                   We must provide the CSS property to the HTML element in a proper way. 
+
+                                             selector { property: value }  
+
+
+## Comments in CSS   :
+                                                  /* This is  CSS comment */  
+
+## Types of CSS
+
+                         1. Inline  CSS :
+                                                    Inline CSS is used to style the elements of HTML documents.
+                                                    It is used in HTML to style the attributes without using the selectors. 
+
+                                                    Syntax : 
+                                                                                  <h1 style=" ">    </h1>
+
+                         2. internal CSS :
+                                                      Internal CSS is used to design the style single page effectively. 
+                                                      It is more time-consuming because we can only work on one page or we need to style each web page. 
+                                                      In internal CSS, we style a single webpage uniquely.
+
+                                                    Syntax:
+                                                                   <style>  
+                                                                           selector { property : value }
+                                                                   </style>  
+                                                    
+                         3. external CSS :
+                                                           External CSS is used to link all webpage with an external file. 
+                                                           CSS, which can be created in a text file. 
+                                                           It is more efficient for styling an extensive webpage. 
+                                                           It also increases the readability of the CSS files.
+
+                                                          Syntax:
+                                                                         <head>  
+                                                                                    <link rel="stylesheet"  href="FileName.css">   
+                                                                         </head>   
+
+                                                                               

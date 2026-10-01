@@ -1,0 +1,127 @@
+
+Todays Lecture Agenda :  
+
+
+IMP note :  ID : Must be unique on a page. Only one element can have a given ID.
+
+            Class : Can be used on multiple elements. Many elements can share the same class.
+
+                                                    
+## CSS Selector : 
+                                CSS selectors are used to select the content you want to style. 
+                                Selectors are the part of CSS rule set. 
+                                CSS selectors select HTML elements according to its id, class, type, attribute etc.
+
+                            Types of selectors in CSS
+
+                                      1. CSS Element Selector : 
+                                                                                        The element selector selects the HTML element by name.
+                                                                                                  <style>  
+                                                                                                            p{  
+                                                                                                                    text-align: center;  
+                                                                                                                     color: blue;  
+                                                                                                                 }   
+                                                                                                    </style> 
+                                                                                                    <p >Element Selector</p>
+
+                                      2. CSS Id Selector :
+                                                                                 The id selector selects the id attribute of an HTML element to select a specific element. 
+                                                                                 An id is always unique within the page so it is chosen to select a single, unique element.
+                                                                                  It is written with the hash character (#)
+                                                                                                    <style>  
+                                                                                                           # id_name{  
+                                                                                                                    text-align: center;  
+                                                                                                                     color: blue;  
+                                                                                                                 }   
+                                                                                                    </style> 
+                                                                                                     <p id = "p1">id Selector</p>
+
+                                      3. CSS Class Selector :
+                                                                                     The class selector selects HTML elements with a specific class attribute. 
+                                                                                      A class name should not be started with a number.
+                                                                                      It is written with the Dot (.)      
+                                                                                                     <style>  
+                                                                                                           .p1 {  
+                                                                                                                    text-align: center;  
+                                                                                                                     color: blue;  
+                                                                                                                 }   
+                                                                                                    </style> 
+                                                                                                     <p class= "p1">Class Selector</p>       
+
+                                                                                       CSS Class Selector for specific element 
+                                                                                                      <style>  
+                                                                                                           p.p1 {  
+                                                                                                                    text-align: center;  
+                                                                                                                     color: blue;  
+                                                                                                                 }   
+                                                                                                    </style> 
+                                                                                                     <p class= "p1">Class Selector</p>
+                                                                                                     <h1 class= "p1">Class Selector</h1>      
+      
+                                      4. CSS Universal Selector :
+                                                                                        The universal selector is used as a wildcard character(*). 
+                                                                                         It selects all the elements on the pages.
+                                                                                                      <style>  
+                                                                                                            body/*{  
+                                                                                                                    text-align: center;  
+                                                                                                                     color: blue;  
+                                                                                                                 }   
+                                                                                                    </style> 
+
+                                      5. CSS Group Selector : 
+                                                                                   The grouping selector is used to select all the elements with the same style definitions.
+                                                                                   Grouping selector is used to minimize the code. 
+                                                                                   Commas are used to separate each selector in grouping.
+                                                                                                      <style>  
+                                                                                                           p,h1 {  
+                                                                                                                    text-align: center;  
+                                                                                                                     color: blue;  
+                                                                                                                 }   
+                                                                                                    </style> 
+                                                                                                     <p>Class Selector</p>
+                                                                                                     <h1>Class Selector</h1> 
+
+
+
+
+## CSS Border :
+                               CSS border is a key property used to characterize and style the borders around HTML components
+
+                                     	1. border-style : 
+                                                                          1. none :  It doesn't define any border.
+                                                                          2. dotted : It is used to define a dotted border.
+                                                                          3. dashed : It is used to define a dashed border.
+                                                                          4. solid : It is used to define a solid border.
+                                                                          5. double : It defines two borders with the same border-width value.
+                                                                          6. groove : It defines a 3d grooved border. effect is generated according to border-color value.
+                                                                          7. ridge : It defines a 3d ridged border. effect is generated according to border-color value.
+                                                                          8. inset : It defines a 3d inset border. effect is generated according to border-color value.
+                                                                          9. outset : It defines a 3d outset border. effect is generated according to border-color value.
+					2. border-color :
+                                                                         There are three strategies to set the color of the border.
+
+                                                                         Name : It determines the color name. For instance: "red".
+                                                                         RGB :  It determines the RGB worth of the color. For instance: "rgb(255,0,0)".
+                                                                         Hex :  It determines the hex worth of the color. For instance: "#ff0000".
+
+					3. border-width :
+                                                                       The border-width property is used to set the border's width. 
+                                                                       It is set in pixels. 
+                                                                      You can also use the one of the three pre-defined values, 1. thin 2. medium 3. thick   to set the width of the border.
+					4. border-radius
+
+                                                                    Syntax   
+                                                                                     border : border_width  border_Style border_color
+
+
+
+
+
+
+text-align center
+font-size 
+text-transform:	
+font-family:
+line-height:
+text-decoration: underline;
+cursor: pointer;

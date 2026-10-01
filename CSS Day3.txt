@@ -1,0 +1,121 @@
+ ## external CSS :
+                                                           External CSS is used to link all webpage with an external file. 
+                                                           CSS, which can be created in a text file. 
+                                                           It is more efficient for styling an extensive webpage. 
+                                                           It also increases the readability of the CSS files.
+
+                                                          Syntax:
+                                                                         <head>  
+                                                                                    <link rel="stylesheet"  href="FileName.css">   
+                                                                         </head>   
+
+
+for Fev ICON : 
+
+<link rel="icon" type="image/png" href="image address">
+
+
+## CSS Margin :
+                        The CSS margin properties are used to create space around elements, outside of any defined borders.
+                        There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+
+## CSS Padding :
+                         	 The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+				 There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+
+## Box Model in CSS : 
+                                     The CSS box model is essentially a box that wraps around every HTML element. 
+                                      It consists of: content, padding, borders and margins.
+                                       
+
+## CSS Font : 
+                           CSS Font property is used to control the look of texts. 
+                           By the use of CSS font property you can change the text size, color, style and more. 
+
+
+                            1. CSS Font color : 
+                                                             This property is used to change the color of the text. (standalone attribute)
+
+                            2. CSS Font family :
+ 							     This property is used to change the face of the font.
+
+                            3. CSS Font size : 
+                                                  	    This property is used to increase or decrease the size of the font.
+
+                            4. CSS Font style : 
+                                                            This property is used to make the font bold, italic or oblique.
+
+                            5. CSS Font variant : 
+                                                              This property creates a small-caps effect.
+
+                            6. CSS Font weight : 
+                                                                This property is used to increase or decrease the boldness and lightness of the font.
+
+## Position :
+                   1. static :    
+                                   HTML elements are positioned static by default.
+                                  Static positioned elements are not affected by the top, bottom, left, and right properties.
+                                  it is always positioned according to the normal flow of the page
+
+		 2. relative :
+                                      An element with relative positioned to its normal position.
+                                      Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.                       
+
+                 3. fixed :
+                                 An element with fixed positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
+                                The top, right, bottom, and left properties are used to position the element.
+
+                4. absolute : 
+                                    An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like 
+                                    fixed).
+                                    if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+                5. sticky :
+   
+                               An element with position: sticky; is positioned based on the user's scroll position.
+
+
+
+##   CSS Background :
+                                          CSS background property is used to define the background effects on element. 
+                                          There are 5 CSS background properties that affects the HTML elements:
+
+                                                   1. background-color :
+                                                                                          The background-color property is used to specify the background color of the element.
+                                                                                          			<style>  
+                                                                                                 			selector{  
+                                                                                                       					 background-color: red;  
+                                                                                                                 			}  
+                                                                                          			</style>
+  
+                                                   2.background-image :
+                                                                                              The background-image property is used to set an image as a background of an element. 
+                                                                                              By default the image covers the entire element. 
+                                                                                                                <style>  
+                                                                                                 			selector{  
+                                                                                                       					background-image: url(" ");  
+                                                                                                                 			}  
+                                                                                          			</style>
+
+
+                                                   3. background-repeat :
+                                                                                                By default, the background-image property repeats the background image horizontally and vertically. 
+
+                                                                                                    background-repeat  :  1. repeat,   2. no-repeat,   3. repeat-x,   4. repeat-y,  5. space, 6. round
+
+                                                   4. background-attachment :
+                                                                                                         The background-attachment property is used to specify if the background image is fixed or scroll with the rest 
+                                                                                                          of the page in browser window
+
+                                                                                                            background-attachment: 1. fixed,  2. scroll  
+
+                                                   5. background-position : 
+                                                                                                 The background-position property is used to define the initial position of the background image. 
+                                                                                                  By default, the background image is placed on the top-left of the webpage.
+
+                                                                                                    background-position :  1. center,  2. top,  3. bottom,  4. left,  5. right
+   
+                       
+
+
+      
