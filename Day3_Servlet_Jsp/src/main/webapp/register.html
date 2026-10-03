@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Registration</title>
+
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+h2 {
+	text-align: center;
+	color: #333;
+}
+
+form {
+	width: 400px;
+	margin: 30px auto;
+	padding: 25px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #ccc;
+}
+
+label {
+	display: inline-block;
+	width: 120px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #444;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	width: 230px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus
+	{
+	border-color: #007bff;
+	outline: none;
+}
+
+input[type="submit"], input[type="reset"] {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	font-size: 14px;
+}
+
+input[type="submit"] {
+	background-color: #007bff;
+}
+
+input[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+input[type="reset"] {
+	background-color: #6c757d;
+	margin-left: 10px;
+}
+
+input[type="reset"]:hover {
+	background-color: #545b62;
+}
+</style>
+</head>
+
+<body>
+
+	<h2>Employee Registration</h2>
+
+	<form action="register" method="post">
+
+		<label for="name">Employee Name:</label> <input type="text" id="name"
+			name="name" required> <br>
+		<br> <label for="employeeId">Employee ID:</label> <input
+			type="text" id="employeeId" name="employeeId" required> <br>
+		<br> <label for="city">City:</label> <input type="text" id="city"
+			name="city" required> <br>
+		<br> <label for="email">Email:</label> <input type="email"
+			id="email" name="email" required> <br>
+		<br> <label for="password">Password:</label> <input
+			type="password" id="password" name="password" required> <br>
+		<br> <input type="submit" value="Register"> <input
+			type="reset" value="Clear">
+
+	</form>
+
+</body>
+</html>
