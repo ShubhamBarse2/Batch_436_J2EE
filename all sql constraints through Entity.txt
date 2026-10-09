@@ -1,0 +1,81 @@
+
+
+SQL Constraint	Entity/Class approach
+
+PRIMARY KEY	@Id
+AUTO_INCREMENT	@GeneratedValue
+NOT NULL	@Column(nullable = false)
+UNIQUE	        @Column(unique = true)
+CHECK	        Hibernate @Check(constraints = "age >= 18 and age<=120")
+DEFAULT   	Hibernate @ColumnDefault (note --> inside this fields u should mentioned explicitly value String city = "pune") in annotation --> @ColumnDefault(value = "'pune'")
+Length	        @Column(length = 50)
+
+
+
+ref code : 
+
+
+@Entity
+public class Employee { // MANY
+
+	@Id
+	private int empId;
+	private String empName;
+
+	@ColumnDefault(value = "'pune'")
+	private String city = "pune";
+
+	@Check(constraints = "age >= 24 AND age <= 120")
+	private int age;
+
+	@ManyToOne
+//	@JoinColumn(name = "dddd")
+	Department dept;
+
+	@Transient
+	private String exp;
+
+
+
+@Transient	Field is NOT stored in DB
+
+
+
+Hibernate flow internal : 
+
+
+Java Application
+       ↓
+Student Object
+       ↓
+session.persist()
+       ↓
+Hibernate Session
+       ↓
+Persistence Context
+       ↓
+Entity State Management
+       ↓
+Hibernate ORM Engine
+       ↓
+Mapping Metadata
+       ↓
+SQL Generation
+       ↓
+JDBC
+       ↓
+Database
+
+
+
+
+Dialect          → tells Hibernate HOW to write SQL
+JDBC Driver      → actually communicates with database
+Connection       → represents database connection
+
+
+
+
+Hibernate Dialect is a database-specific SQL translator that helps Hibernate generate SQL compatible with the target database.
+
+
