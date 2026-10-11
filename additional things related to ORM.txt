@@ -1,0 +1,117 @@
+additional things related to ORM : 
+
+
+Hibernate LifeCycle : 
+
+
+State	        Simple meaning
+
+Transient	Object created
+Persistent	Hibernate manages object
+Detached	Hibernate stops managing object
+Removed	        Object marked for deletion
+
+
+
+Persistence Context : 
+The Persistence Context is a collection of managed entity instances associated with a Hibernate Session. It supports first-level caching, entity identity management, and dirty checking.
+
+
+First-Level Cache in Hibernate: 
+First-level cache stores entity objects inside a Hibernate Session so Hibernate can reuse them instead of fetching them repeatedly from the database
+
+ref code : 
+
+Student s1 = session.find(Student.class, 101);
+Student s2 = session.find(Student.class, 101);
+
+note : 
+First find() → Hibernate fetches the student from the database.
+Second find() → Hibernate reuses the same managed entity from the Session's cache, normally without another SELECT query.
+
+First find()  → Database → Session Cache
+Second find() → Session Cache
+
+
+First-level cache is enabled by default.
+It belongs to a single Hibernate Session.
+It is cleared when the Session is closed.
+
+
+Dirty Checking in Hibernate : 
+Dirty checking is a Hibernate feature that automatically detects changes made to a managed entity and updates the database during flush.
+
+
+for Transaction purpose : 
+
+Begin Transaction
+       ↓
+Perform CRUD operations
+       ↓
+Flush → Execute pending SQL
+       ↓
+Commit → Finalize transaction
+
+
+
+Lazy               	                     Eager
+Load when needed	                Load eagerly
+May save unnecessary database work	May load unnecessary data
+FetchType.LAZY	                        FetchType.EAGER
+Remember: Lazy = later when needed.     Eager = early, along with the requested entity.
+
+ex: 
+Lazy : You open a book's index first and read a chapter only when you need it.
+Eager : You open a book and immediately read the index and all the chapters.
+
+
+
+Paginations in hibernate : 
+
+Pagination means fetching records in small groups instead of fetching all records at once.(just like as LIMIT & OFFSET in SQL)
+
+ref code : 
+
+
+Query<Student> query = session.createQuery(
+    "FROM Student",
+    Student.class
+);
+
+query.setFirstResult(0);
+query.setMaxResults(10);
+
+List<Student> students = query.getResultList();
+
+for (Student s : students) {
+    System.out.println(s);
+}
+
+
+
+What is the N+1 Problem in Hibernate : 
+The N+1 problem occurs when Hibernate executes 1 query to fetch the main records and then N additional queries to fetch related data.
+
+
+First-level vs Second-level cache
+
+Second-Level Cache in Hibernate :
+Second-level cache stores entity data so that different Hibernate Sessions can reuse it without repeatedly fetching the same data from the database
+
+First-level cache	Second-level cache
+
+Belongs to one Session	Shared across Sessions
+Enabled by default	Must be configured
+Cleared when Session closes	Can survive Session closure
+
+
+
+Composite Primary Key
+Meaning: A composite primary key uses two or more columns together to uniquely identify one record.
+
+we used Annotations like as : 
+
+@EmbeddedId
+@Embeddable
+
+
