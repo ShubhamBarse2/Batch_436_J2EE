@@ -1,0 +1,66 @@
+Note : Tomorrow batch timing 9.30am  to 11.30am 
+
+Task Statement : 
+
+mail me --> 432@thekiranacademy.com : 
+
+Design a Spring-based Food Order System where a customer places an order, the restaurant prepares food, payment is processed, and delivery is completed.
+
+All objects must be managed by Spring IoC Container using Annotations only (No XML).
+
+Functional Flow (Real World)
+Customer places order
+Restaurant prepares food (Veg / Non-Veg)
+Payment is processed (UPI / Cash)
+Delivery service delivers food
+ Classes You Must Create
+1. Restaurant (Interface)
+prepareFood()
+	
+Implement:
+
+VegRestaurant
+NonVegRestaurant
+ 2. PaymentService (Interface)
+pay()
+
+ Implement:
+
+CashPayment
+UPIPayment
+ 3. DeliveryService
+deliverFood()
+Depends on Restaurant
+4. OrderService
+placeOrder()
+Depends on:
+Restaurant
+PaymentService
+DeliveryService
+ 5. AppConfig
+Use @Configuration
+Use @ComponentScan
+ 6. MainApp
+Load Spring Container
+Call placeOrder()
+ Concepts You MUST Use
+
+✔ @Component
+✔ @Autowired
+✔ @Qualifier (to select Veg/Non-Veg & Payment type)
+✔ @Configuration
+✔ @ComponentScan
+✔ IoC (Spring creates objects)
+✔ Dependency Injection
+
+ Execution Flow
+OrderService.placeOrder()
+   → Restaurant.prepareFood()
+   → PaymentService.pay()
+   → DeliveryService.deliverFood()
+
+
+Expected Output
+Preparing Veg Food...
+Payment done using UPI...
+Food Delivered Successfully!
