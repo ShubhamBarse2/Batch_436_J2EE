@@ -1,0 +1,5 @@
+com\tka\entities\Customer.class
+com\tka\dao\ConstomerRepo.class
+com\tka\SpringDataJpaApplication.class
+com\tka\controller\CustomerController.class
+com\tka\service\CustomerService.class
